@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## In this assignment, we see how important is to cache the results, 
+## in oder to use it later, especially for time consuming computations.
+## Matrix inversion usually is very costly,
 
-## Write a short comment describing this function
+## Function makeCacheMatrix creates a special "matrix" 
+## object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   inv_x <- NULL
@@ -18,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve function just simply computes the inverse of the "matrix"
+## returned from the above function called makeCacheMatrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
